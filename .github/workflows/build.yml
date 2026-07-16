@@ -90,7 +90,7 @@ jobs:
     if: needs.check_version.outputs.ALREADY_RELEASE != '1'
 
     steps:
-      - uses: softprops/action-gh-release@v2.1.0
+      - uses: softprops/action-gh-release@v3.0.2
         id: createRelease
         name: Create Runner Release
         env:
